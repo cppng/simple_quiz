@@ -12,5 +12,6 @@ RUN a2enmod rewrite
 
 # Copy application source
 COPY ./ /var/www/html
+COPY .htaccess /var/www/
 RUN chown -R www-data:www-data /var/www
  
